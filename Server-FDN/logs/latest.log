@@ -1,0 +1,444 @@
+[10:05:48] [main/INFO]: ModLauncher running: args [--username, Virbus, --version, Server-FDN, --gameDir, C:\Users\User\AppData\Roaming\.minecraft\versions\Server-FDN, --assetsDir, C:\Users\User\AppData\Roaming\.minecraft\assets, --assetIndex, 1.16, --uuid, ea283808c63447e5a4f44d89a89c15d0, --accessToken, ????????, --userType, mojang, --versionType, release, --width, 925, --height, 530, --launchTarget, fmlclient, --fml.forgeVersion, 36.2.20, --fml.mcVersion, 1.16.5, --fml.forgeGroup, net.minecraftforge, --fml.mcpVersion, 20210115.111550]
+[10:05:48] [main/INFO]: ModLauncher 8.0.9+86+master.3cf110c starting: java version 1.8.0_51 by Oracle Corporation
+[10:05:48] [main/WARN]: LEGACY JDK DETECTED, SECURED JAR HANDLING DISABLED
+[10:05:49] [main/INFO]: OptiFineTransformationService.onLoad
+[10:05:49] [main/INFO]: OptiFine ZIP file: C:\Users\User\AppData\Roaming\.minecraft\versions\Server-FDN\mods\OptiFine-1.16.5_HD_U_G8_pre2.jar
+[10:05:49] [main/INFO]: Target.PRE_CLASS is available
+[10:05:49] [main/INFO]: Added Lets Encrypt root certificates as additional trust
+[10:05:49] [main/INFO]: SpongePowered MIXIN Subsystem Version=0.8.4 Source=file:/C:/Users/User/AppData/Roaming/.minecraft/libraries/org/spongepowered/mixin/0.8.4/mixin-0.8.4.jar Service=ModLauncher Env=CLIENT
+[10:05:49] [main/INFO]: OptiFineTransformationService.initialize
+[10:05:52] [main/INFO]: OptiFineTransformationService.transformers
+[10:05:53] [main/INFO]: Targets: 308
+[10:05:54] [main/INFO]: additionalClassesLocator: [optifine., net.optifine.]
+[10:05:55] [main/INFO]: Launching target 'fmlclient' with arguments [--version, Server-FDN, --gameDir, C:\Users\User\AppData\Roaming\.minecraft\versions\Server-FDN, --assetsDir, C:\Users\User\AppData\Roaming\.minecraft\assets, --uuid, ea283808c63447e5a4f44d89a89c15d0, --username, Virbus, --assetIndex, 1.16, --accessToken, ????????, --userType, mojang, --versionType, release, --width, 925, --height, 530]
+[10:05:58] [main/ERROR]: Error occurred applying transform of coremod META-INF/asm/multipart.js function render
+java.lang.NullPointerException: null
+	at org.objectweb.asm.tree.InsnList.insert(InsnList.java:343) ~[asm-tree-9.1.jar:9.1]
+	at jdk.nashorn.internal.scripts.Script$Recompilation$26$5956A$\^eval\_.initializeCoreMod$transformer-3(<eval>:135) ~[?:?]
+	at jdk.nashorn.internal.runtime.ScriptFunctionData.invoke(ScriptFunctionData.java:638) ~[nashorn.jar:?]
+	at jdk.nashorn.internal.runtime.ScriptFunction.invoke(ScriptFunction.java:229) ~[nashorn.jar:?]
+	at jdk.nashorn.internal.runtime.ScriptRuntime.apply(ScriptRuntime.java:387) ~[nashorn.jar:?]
+	at jdk.nashorn.api.scripting.ScriptObjectMirror.call(ScriptObjectMirror.java:110) ~[nashorn.jar:?]
+	at net.minecraftforge.coremod.NashornFactory.lambda$getFunction$0(NashornFactory.java:18) ~[coremods-4.0.6.jar:4.0.6+14+master.c21a551]
+	at net.minecraftforge.coremod.NashornFactory$$Lambda$432/1188445627.apply(Unknown Source) ~[?:?]
+	at net.minecraftforge.coremod.transformer.CoreModMethodTransformer.runCoremod(CoreModMethodTransformer.java:18) ~[coremods-4.0.6.jar:?]
+	at net.minecraftforge.coremod.transformer.CoreModMethodTransformer.runCoremod(CoreModMethodTransformer.java:10) ~[coremods-4.0.6.jar:?]
+	at net.minecraftforge.coremod.transformer.CoreModBaseTransformer.transform(CoreModBaseTransformer.java:38) [coremods-4.0.6.jar:?]
+	at cpw.mods.modlauncher.TransformerHolder.transform(TransformerHolder.java:41) [modlauncher-8.0.9.jar:?]
+	at cpw.mods.modlauncher.ClassTransformer.performVote(ClassTransformer.java:179) [modlauncher-8.0.9.jar:?]
+	at cpw.mods.modlauncher.ClassTransformer.transform(ClassTransformer.java:111) [modlauncher-8.0.9.jar:?]
+	at cpw.mods.modlauncher.TransformingClassLoader$DelegatedClassLoader.findClass(TransformingClassLoader.java:265) [modlauncher-8.0.9.jar:?]
+	at cpw.mods.modlauncher.TransformingClassLoader.loadClass(TransformingClassLoader.java:136) [modlauncher-8.0.9.jar:?]
+	at cpw.mods.modlauncher.TransformingClassLoader.loadClass(TransformingClassLoader.java:98) [modlauncher-8.0.9.jar:?]
+	at java.lang.ClassLoader.loadClass(ClassLoader.java:357) [?:1.8.0_51]
+	at net.optifine.reflect.Reflector.<clinit>(Reflector.java:290) [?:?]
+	at net.minecraft.crash.CrashReport.func_71504_g(CrashReport.java:101) [?:?]
+	at net.minecraft.crash.CrashReport.<init>(CrashReport.java:54) [?:?]
+	at net.minecraft.crash.CrashReport.func_230188_h_(CrashReport.java:425) [?:?]
+	at net.minecraft.client.main.Main.main(Main.java:122) [?:?]
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method) ~[?:1.8.0_51]
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62) ~[?:1.8.0_51]
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43) ~[?:1.8.0_51]
+	at java.lang.reflect.Method.invoke(Method.java:497) ~[?:1.8.0_51]
+	at net.minecraftforge.fml.loading.FMLClientLaunchProvider.lambda$launchService$0(FMLClientLaunchProvider.java:51) [forge-1.16.5-36.2.20.jar:36.2]
+	at net.minecraftforge.fml.loading.FMLClientLaunchProvider$$Lambda$458/1745512157.call(Unknown Source) [forge-1.16.5-36.2.20.jar:36.2]
+	at cpw.mods.modlauncher.LaunchServiceHandlerDecorator.launch(LaunchServiceHandlerDecorator.java:37) [modlauncher-8.0.9.jar:?]
+	at cpw.mods.modlauncher.LaunchServiceHandler.launch(LaunchServiceHandler.java:54) [modlauncher-8.0.9.jar:?]
+	at cpw.mods.modlauncher.LaunchServiceHandler.launch(LaunchServiceHandler.java:72) [modlauncher-8.0.9.jar:?]
+	at cpw.mods.modlauncher.Launcher.run(Launcher.java:82) [modlauncher-8.0.9.jar:?]
+	at cpw.mods.modlauncher.Launcher.main(Launcher.java:66) [modlauncher-8.0.9.jar:?]
+[10:06:20] [main/INFO]: Environment: authHost='https://authserver.mojang.com', accountsHost='https://api.mojang.com', sessionHost='https://sessionserver.mojang.com', servicesHost='https://api.minecraftservices.com', name='PROD'
+[10:06:21] [main/INFO]: Setting user: Virbus
+[10:06:21] [main/INFO]: [OptiFine] (Reflector) Class not present: net.minecraft.launchwrapper.Launch
+[10:06:21] [main/INFO]: Backend library: LWJGL version 3.2.2 build 10
+[10:06:22] [main/INFO]: [OptiFine] 
+[10:06:22] [main/INFO]: [OptiFine] OptiFine_1.16.5_HD_U_G8_pre2
+[10:06:22] [main/INFO]: [OptiFine] Build: 20210305-002749
+[10:06:22] [main/INFO]: [OptiFine] OS: Windows 10 (amd64) version 10.0
+[10:06:22] [main/INFO]: [OptiFine] Java: 1.8.0_51, Oracle Corporation
+[10:06:22] [main/INFO]: [OptiFine] VM: Java HotSpot(TM) 64-Bit Server VM (mixed mode), Oracle Corporation
+[10:06:22] [main/INFO]: [OptiFine] LWJGL: 3.3.0 Win32 WGL EGL OSMesa VisualC DLL
+[10:06:22] [main/INFO]: [OptiFine] OpenGL: AMD Radeon R7 200 Series, version 4.6.14736 Compatibility Profile Context 20.9.1 27.20.12029.1000, ATI Technologies Inc.
+[10:06:22] [main/INFO]: [OptiFine] OpenGL Version: 4.6.14736
+[10:06:22] [main/INFO]: [OptiFine] OpenGL Fancy fog: Not available (GL_NV_fog_distance)
+[10:06:22] [main/INFO]: [OptiFine] Maximum texture size: 16384x16384
+[10:06:22] [VersionCheck/INFO]: [OptiFine] Checking for new version
+[10:06:22] [main/INFO]: [Shaders] OpenGL Version: 4.6.14736 Compatibility Profile Context 20.9.1 27.20.12029.1000
+[10:06:22] [main/INFO]: [Shaders] Vendor:  ATI Technologies Inc.
+[10:06:22] [main/INFO]: [Shaders] Renderer: AMD Radeon R7 200 Series
+[10:06:22] [main/INFO]: [Shaders] Capabilities:  2.0  2.1  3.0  3.2  4.0 
+[10:06:22] [main/INFO]: [Shaders] GL_MAX_DRAW_BUFFERS: 8
+[10:06:22] [main/INFO]: [Shaders] GL_MAX_COLOR_ATTACHMENTS_EXT: 8
+[10:06:22] [main/INFO]: [Shaders] GL_MAX_TEXTURE_IMAGE_UNITS: 32
+[10:06:22] [main/INFO]: [Shaders] Load shaders configuration.
+[10:06:22] [main/INFO]: [Shaders] Save shaders configuration.
+[10:06:22] [main/INFO]: [Shaders] No shaderpack loaded.
+[10:06:22] [main/INFO]: [OptiFine] (Reflector) Class not present: net.minecraftforge.fml.common.Loader
+[10:06:22] [VersionCheck/INFO]: [OptiFine] Version found: G7
+[10:06:22] [modloading-worker-0/INFO]: Forge mod loading, version 36.2.20, for MC 1.16.5 with MCP 20210115.111550
+[10:06:22] [modloading-worker-0/INFO]: MinecraftForge v36.2.20 Initialized
+[10:06:24] [modloading-worker-1/INFO]: Skipped compatibility for mod immersiveengineering.
+[10:06:28] [main/INFO]: Narrator library for x64 successfully loaded
+[10:06:28] [main/INFO]: Reloading ResourceManager: Default, Mod Resources
+[10:06:28] [main/INFO]: [OptiFine] *** Reloading textures ***
+[10:06:28] [main/INFO]: [OptiFine] Resource packs: Mod Resources
+[10:06:29] [Worker-Main-4/INFO]: [OptiFine] Multitexture: false
+[10:06:29] [main/INFO]: [OptiFine] *** Reflector Forge ***
+[10:06:29] [main/INFO]: [OptiFine] (Reflector) Class not present: mods.betterfoliage.client.BetterFoliageClient
+[10:06:29] [main/WARN]: [OptiFine] (Reflector) More than one method found: net.minecraftforge.client.ForgeHooksClient.renderMainMenu
+[10:06:29] [main/WARN]: [OptiFine] (Reflector)  - public static void net.minecraftforge.client.ForgeHooksClient.renderMainMenu(net.minecraft.client.gui.screen.MainMenuScreen,com.mojang.blaze3d.matrix.MatrixStack,net.minecraft.client.gui.FontRenderer,int,int)
+[10:06:29] [main/WARN]: [OptiFine] (Reflector)  - public static void net.minecraftforge.client.ForgeHooksClient.renderMainMenu(net.minecraft.client.gui.screen.MainMenuScreen,com.mojang.blaze3d.matrix.MatrixStack,net.minecraft.client.gui.FontRenderer,int,int,int)
+[10:06:29] [main/INFO]: [OptiFine] (Reflector) Field not present: net.minecraftforge.client.model.pipeline.LightUtil.itemConsumer
+[10:06:29] [main/INFO]: [OptiFine] (Reflector) Field not present: net.minecraftforge.client.model.pipeline.LightUtil.tessellator
+[10:06:29] [main/INFO]: [OptiFine] (Reflector) Class not present: net.minecraftforge.fml.common.ModContainer
+[10:06:29] [main/INFO]: [OptiFine] *** Reflector Vanilla ***
+[10:06:32] [Forge Version Check/INFO]: [fallingtree] Starting version check at https://raw.githubusercontent.com/RakSrinaNa/FallingTree/1.16.5/update.json
+[10:06:33] [Worker-Main-6/INFO]: [OptiFine] Multitexture: false
+[10:06:33] [Forge Version Check/INFO]: [fallingtree] Found status: UP_TO_DATE Current: 2.11.5 Target: null
+[10:06:33] [Forge Version Check/INFO]: [forge] Starting version check at https://files.minecraftforge.net/net/minecraftforge/forge/promotions_slim.json
+[10:06:34] [Forge Version Check/INFO]: [forge] Found status: UP_TO_DATE Current: 36.2.20 Target: null
+[10:06:34] [Forge Version Check/INFO]: [twilightforest] Starting version check at https://raw.githubusercontent.com/TeamTwilight/twilightforest/1.16.x/update.json
+[10:06:34] [Forge Version Check/INFO]: [twilightforest] Found status: BETA Current: NONE Target: null
+[10:06:34] [Forge Version Check/INFO]: [gravestone] Starting version check at https://maxhenkel.de/update/gravestone.json
+[10:06:34] [Forge Version Check/INFO]: [gravestone] Found status: AHEAD Current: 1.16.5-1.0.7 Target: null
+[10:06:35] [Worker-Main-5/WARN]: Unable to load model: 'twilightforest:twilight_oak_door#inventory' referenced from: twilightforest:twilight_oak_door#inventory: {}
+[10:06:35] [Worker-Main-5/WARN]: java.io.FileNotFoundException: twilightforest:models/item/twilight_oak_door.json
+[10:06:35] [Worker-Main-5/WARN]: Unable to load model: 'twilightforest:canopy_door#inventory' referenced from: twilightforest:canopy_door#inventory: {}
+[10:06:35] [Worker-Main-5/WARN]: java.io.FileNotFoundException: twilightforest:models/item/canopy_door.json
+[10:06:35] [Worker-Main-5/WARN]: Unable to load model: 'twilightforest:mangrove_door#inventory' referenced from: twilightforest:mangrove_door#inventory: {}
+[10:06:35] [Worker-Main-5/WARN]: java.io.FileNotFoundException: twilightforest:models/item/mangrove_door.json
+[10:06:35] [Worker-Main-5/WARN]: Unable to load model: 'twilightforest:dark_door#inventory' referenced from: twilightforest:dark_door#inventory: {}
+[10:06:35] [Worker-Main-5/WARN]: java.io.FileNotFoundException: twilightforest:models/item/dark_door.json
+[10:06:35] [Worker-Main-5/WARN]: Unable to load model: 'twilightforest:time_door#inventory' referenced from: twilightforest:time_door#inventory: {}
+[10:06:35] [Worker-Main-5/WARN]: java.io.FileNotFoundException: twilightforest:models/item/time_door.json
+[10:06:35] [Worker-Main-5/WARN]: Unable to load model: 'twilightforest:trans_door#inventory' referenced from: twilightforest:trans_door#inventory: {}
+[10:06:35] [Worker-Main-5/WARN]: java.io.FileNotFoundException: twilightforest:models/item/trans_door.json
+[10:06:35] [Worker-Main-5/WARN]: Unable to load model: 'twilightforest:mine_door#inventory' referenced from: twilightforest:mine_door#inventory: {}
+[10:06:35] [Worker-Main-5/WARN]: java.io.FileNotFoundException: twilightforest:models/item/mine_door.json
+[10:06:35] [Worker-Main-5/WARN]: Unable to load model: 'twilightforest:sort_door#inventory' referenced from: twilightforest:sort_door#inventory: {}
+[10:06:35] [Worker-Main-5/WARN]: java.io.FileNotFoundException: twilightforest:models/item/sort_door.json
+[10:06:35] [Worker-Main-5/WARN]: [OptiFine] Unknown resource pack file: mod_resources
+[10:06:35] [Worker-Main-5/WARN]: [OptiFine] Unknown resource pack file: mod_resources
+[10:06:35] [Worker-Main-5/WARN]: [OptiFine] Unknown resource pack file: mod_resources
+[10:06:35] [Worker-Main-5/WARN]: [OptiFine] Unknown resource pack file: mod_resources
+[10:06:36] [Worker-Main-5/INFO]: [OptiFine] Multitexture: false
+[10:06:36] [Worker-Main-5/WARN]: [OptiFine] Unknown resource pack file: mod_resources
+[10:06:36] [Worker-Main-5/INFO]: [OptiFine] Multipass connected textures: false
+[10:06:36] [Worker-Main-5/INFO]: [OptiFine] ConnectedTextures: optifine/ctm/default/00_glass_white/glass_pane_white.properties
+[10:06:36] [Worker-Main-5/INFO]: [OptiFine] ConnectedTextures: optifine/ctm/default/00_glass_white/glass_white.properties
+[10:06:36] [Worker-Main-5/INFO]: [OptiFine] ConnectedTextures: optifine/ctm/default/01_glass_orange/glass_orange.properties
+[10:06:36] [Worker-Main-5/INFO]: [OptiFine] ConnectedTextures: optifine/ctm/default/01_glass_orange/glass_pane_orange.properties
+[10:06:36] [Worker-Main-5/INFO]: [OptiFine] ConnectedTextures: optifine/ctm/default/02_glass_magenta/glass_magenta.properties
+[10:06:36] [Worker-Main-5/INFO]: [OptiFine] ConnectedTextures: optifine/ctm/default/02_glass_magenta/glass_pane_magenta.properties
+[10:06:36] [Worker-Main-5/INFO]: [OptiFine] ConnectedTextures: optifine/ctm/default/03_glass_light_blue/glass_light_blue.properties
+[10:06:36] [Worker-Main-5/INFO]: [OptiFine] ConnectedTextures: optifine/ctm/default/03_glass_light_blue/glass_pane_light_blue.properties
+[10:06:36] [Worker-Main-5/INFO]: [OptiFine] ConnectedTextures: optifine/ctm/default/04_glass_yellow/glass_pane_yellow.properties
+[10:06:36] [Worker-Main-5/INFO]: [OptiFine] ConnectedTextures: optifine/ctm/default/04_glass_yellow/glass_yellow.properties
+[10:06:36] [Worker-Main-5/INFO]: [OptiFine] ConnectedTextures: optifine/ctm/default/05_glass_lime/glass_lime.properties
+[10:06:36] [Worker-Main-5/INFO]: [OptiFine] ConnectedTextures: optifine/ctm/default/05_glass_lime/glass_pane_lime.properties
+[10:06:36] [Worker-Main-5/INFO]: [OptiFine] ConnectedTextures: optifine/ctm/default/06_glass_pink/glass_pane_pink.properties
+[10:06:36] [Worker-Main-5/INFO]: [OptiFine] ConnectedTextures: optifine/ctm/default/06_glass_pink/glass_pink.properties
+[10:06:36] [Worker-Main-5/INFO]: [OptiFine] ConnectedTextures: optifine/ctm/default/07_glass_gray/glass_gray.properties
+[10:06:37] [Worker-Main-5/INFO]: [OptiFine] ConnectedTextures: optifine/ctm/default/07_glass_gray/glass_pane_gray.properties
+[10:06:37] [Worker-Main-5/INFO]: [OptiFine] ConnectedTextures: optifine/ctm/default/08_glass_light_gray/glass_light_gray.properties
+[10:06:37] [Worker-Main-5/INFO]: [OptiFine] ConnectedTextures: optifine/ctm/default/08_glass_light_gray/glass_pane_light_gray.properties
+[10:06:37] [Worker-Main-5/INFO]: [OptiFine] ConnectedTextures: optifine/ctm/default/09_glass_cyan/glass_cyan.properties
+[10:06:37] [Worker-Main-5/INFO]: [OptiFine] ConnectedTextures: optifine/ctm/default/09_glass_cyan/glass_pane_cyan.properties
+[10:06:37] [Worker-Main-5/INFO]: [OptiFine] ConnectedTextures: optifine/ctm/default/10_glass_purple/glass_pane_purple.properties
+[10:06:37] [Worker-Main-5/INFO]: [OptiFine] ConnectedTextures: optifine/ctm/default/10_glass_purple/glass_purple.properties
+[10:06:37] [Worker-Main-5/INFO]: [OptiFine] ConnectedTextures: optifine/ctm/default/11_glass_blue/glass_blue.properties
+[10:06:37] [Worker-Main-5/INFO]: [OptiFine] ConnectedTextures: optifine/ctm/default/11_glass_blue/glass_pane_blue.properties
+[10:06:37] [Worker-Main-5/INFO]: [OptiFine] ConnectedTextures: optifine/ctm/default/12_glass_brown/glass_brown.properties
+[10:06:37] [Worker-Main-5/INFO]: [OptiFine] ConnectedTextures: optifine/ctm/default/12_glass_brown/glass_pane_brown.properties
+[10:06:37] [Worker-Main-5/INFO]: [OptiFine] ConnectedTextures: optifine/ctm/default/13_glass_green/glass_green.properties
+[10:06:37] [Worker-Main-5/INFO]: [OptiFine] ConnectedTextures: optifine/ctm/default/13_glass_green/glass_pane_green.properties
+[10:06:37] [Worker-Main-5/INFO]: [OptiFine] ConnectedTextures: optifine/ctm/default/14_glass_red/glass_pane_red.properties
+[10:06:37] [Worker-Main-5/INFO]: [OptiFine] ConnectedTextures: optifine/ctm/default/14_glass_red/glass_red.properties
+[10:06:37] [Worker-Main-5/INFO]: [OptiFine] ConnectedTextures: optifine/ctm/default/15_glass_black/glass_black.properties
+[10:06:37] [Worker-Main-5/INFO]: [OptiFine] ConnectedTextures: optifine/ctm/default/15_glass_black/glass_pane_black.properties
+[10:06:37] [Worker-Main-5/INFO]: [OptiFine] ConnectedTextures: optifine/ctm/default/20_glass/glass.properties
+[10:06:37] [Worker-Main-5/INFO]: [OptiFine] ConnectedTextures: optifine/ctm/default/20_glass/glass_pane.properties
+[10:06:37] [Worker-Main-5/INFO]: [OptiFine] ConnectedTextures: optifine/ctm/default/30_bookshelf/bookshelf.properties
+[10:06:37] [Worker-Main-5/INFO]: [OptiFine] ConnectedTextures: optifine/ctm/default/40_sandstone/sandstone.properties
+[10:06:37] [Worker-Main-5/INFO]: [OptiFine] ConnectedTextures: optifine/ctm/default/41_red_sandstone/red_sandstone.properties
+[10:06:37] [Worker-Main-5/INFO]: [OptiFine] Multipass connected textures: false
+[10:06:37] [Worker-Main-5/INFO]: [OptiFine] BetterGrass: Parsing default configuration optifine/bettergrass.properties
+[10:06:42] [Worker-Main-5/INFO]: [OptiFine] Mipmap levels: 4
+[10:06:42] [Worker-Main-7/INFO]: [OptiFine] Multitexture: false
+[10:06:42] [Worker-Main-8/INFO]: [OptiFine] Multitexture: false
+[10:06:42] [Worker-Main-4/INFO]: [OptiFine] Scaled non power of 2: jei:gui/icons/recipe_transfer, 7 -> 14
+[10:06:42] [Worker-Main-8/ERROR]: Using missing texture, unable to load twilightforest:textures/block/wood/door/trans_lower.png : java.io.IOException: Could not read info from the PNG file net.minecraft.resources.SimpleResource@46e271d9 Image not of any known type, or corrupt
+[10:06:42] [Worker-Main-8/ERROR]: Using missing texture, unable to load twilightforest:textures/block/wood/door/trans_upper.png : java.io.IOException: Could not read info from the PNG file net.minecraft.resources.SimpleResource@72dfe6fa Image not of any known type, or corrupt
+[10:06:43] [Worker-Main-4/ERROR]: Using missing texture, unable to load twilightforest:textures/block/wood/trapdoor/trans_trapdoor.png : java.io.IOException: Could not read info from the PNG file net.minecraft.resources.SimpleResource@f5006e24 Image not of any known type, or corrupt
+[10:06:43] [Worker-Main-9/INFO]: Loading Xaero's Minimap - Stage 1/2
+[10:06:43] [main/INFO]: Loading Xaero's Minimap - Stage 2/2
+[10:06:44] [Worker-Main-5/INFO]: [OptiFine] Multitexture: false
+[10:06:44] [Worker-Main-5/INFO]: [OptiFine] Sprite size: 64
+[10:06:44] [Worker-Main-5/INFO]: [OptiFine] Mipmap levels: 6
+[10:06:44] [Worker-Main-5/INFO]: [OptiFine] Multitexture: false
+[10:06:44] [Worker-Main-5/INFO]: [OptiFine] Sprite size: 64
+[10:06:44] [Worker-Main-5/INFO]: [OptiFine] Mipmap levels: 6
+[10:06:44] [main/INFO]: [xaero.common.mods.SupportMods:<init>:42]: Optifine!
+[10:06:44] [Worker-Main-5/INFO]: [OptiFine] Multitexture: false
+[10:06:44] [Worker-Main-5/INFO]: [OptiFine] Sprite size: 64
+[10:06:44] [Worker-Main-5/INFO]: [OptiFine] Mipmap levels: 6
+[10:06:44] [Worker-Main-5/INFO]: [OptiFine] Multitexture: false
+[10:06:44] [Worker-Main-5/INFO]: [OptiFine] Sprite size: 64
+[10:06:44] [Worker-Main-5/INFO]: [OptiFine] Mipmap levels: 6
+[10:06:44] [Worker-Main-5/INFO]: [OptiFine] Multitexture: false
+[10:06:44] [Worker-Main-5/INFO]: [OptiFine] Sprite size: 64
+[10:06:44] [Worker-Main-5/INFO]: [OptiFine] Mipmap levels: 6
+[10:06:44] [Worker-Main-5/INFO]: [OptiFine] Multitexture: false
+[10:06:44] [Worker-Main-5/INFO]: [OptiFine] Sprite size: 64
+[10:06:44] [Worker-Main-5/INFO]: [OptiFine] Mipmap levels: 6
+[10:06:48] [main/WARN]: Missing sound for event: twilightforest:entity.twilightforest.termite.twilightforest.ambient
+[10:06:48] [main/WARN]: Missing sound for event: twilightforest:entity.twilightforest.termite.twilightforest.death
+[10:06:48] [main/WARN]: Missing sound for event: twilightforest:entity.twilightforest.termite.twilightforest.hurt
+[10:06:48] [main/WARN]: Missing sound for event: twilightforest:entity.twilightforest.termite.twilightforest.step
+[10:06:50] [main/INFO]: OpenAL initialized.
+[10:06:50] [main/INFO]: Sound engine started
+[10:06:50] [main/INFO]: Created: 128x256x0 jei:textures/atlas/gui.png-atlas
+[10:06:50] [main/INFO]: [OptiFine] Animated sprites: 0
+[10:06:50] [main/WARN]: [OptiFine] Invalid grid V: 16, icon: jei:gui/icons/config_button
+[10:06:50] [main/WARN]: [OptiFine] Invalid grid V: 16, icon: jei:gui/icons/config_button
+[10:06:50] [main/WARN]: [OptiFine] Invalid grid V: 16, icon: jei:gui/icons/config_button_cheat
+[10:06:50] [main/WARN]: [OptiFine] Invalid grid V: 16, icon: jei:gui/icons/config_button_cheat
+[10:06:50] [main/WARN]: [OptiFine] Invalid grid V: 16, icon: jei:gui/icons/arrow_previous
+[10:06:50] [main/WARN]: [OptiFine] Invalid grid V: 16, icon: jei:gui/icons/arrow_previous
+[10:06:50] [main/WARN]: [OptiFine] Invalid grid V: 16, icon: jei:gui/icons/arrow_next
+[10:06:50] [main/WARN]: [OptiFine] Invalid grid V: 16, icon: jei:gui/icons/arrow_next
+[10:06:50] [main/WARN]: [OptiFine] Invalid grid V: 16, icon: minecraft:missingno
+[10:06:50] [main/WARN]: [OptiFine] Invalid grid V: 16, icon: minecraft:missingno
+[10:06:50] [main/WARN]: [OptiFine] Invalid grid V: 16, icon: jei:gui/icons/info
+[10:06:50] [main/WARN]: [OptiFine] Invalid grid V: 16, icon: jei:gui/icons/info
+[10:06:50] [main/WARN]: [OptiFine] Invalid grid V: 16, icon: jei:gui/icons/recipe_transfer
+[10:06:50] [main/WARN]: [OptiFine] Invalid grid V: 16, icon: jei:gui/icons/recipe_transfer
+[10:06:50] [main/INFO]: Created: 1024x1024x4 minecraft:textures/atlas/blocks.png-atlas
+[10:06:51] [main/INFO]: [OptiFine] Animated sprites: 77
+[10:06:51] [main/INFO]: Created: 256x128x4 minecraft:textures/atlas/signs.png-atlas
+[10:06:51] [main/INFO]: [OptiFine] Animated sprites: 0
+[10:06:51] [main/INFO]: Created: 512x512x4 minecraft:textures/atlas/banner_patterns.png-atlas
+[10:06:51] [main/INFO]: [OptiFine] Animated sprites: 0
+[10:06:51] [main/INFO]: Created: 512x512x4 minecraft:textures/atlas/shield_patterns.png-atlas
+[10:06:51] [main/INFO]: [OptiFine] Animated sprites: 0
+[10:06:51] [main/INFO]: Created: 256x256x4 minecraft:textures/atlas/chest.png-atlas
+[10:06:51] [main/INFO]: [OptiFine] Animated sprites: 0
+[10:06:51] [main/INFO]: Created: 512x256x4 minecraft:textures/atlas/beds.png-atlas
+[10:06:51] [main/INFO]: [OptiFine] Animated sprites: 0
+[10:06:51] [main/INFO]: Created: 512x256x4 minecraft:textures/atlas/shulker_boxes.png-atlas
+[10:06:51] [main/INFO]: [OptiFine] Animated sprites: 0
+[10:06:53] [main/INFO]: Created: 256x256x0 minecraft:textures/atlas/particles.png-atlas
+[10:06:53] [main/INFO]: [OptiFine] Animated sprites: 0
+[10:06:53] [main/INFO]: Created: 256x256x0 minecraft:textures/atlas/paintings.png-atlas
+[10:06:53] [main/INFO]: [OptiFine] Animated sprites: 0
+[10:06:53] [main/INFO]: Created: 128x128x0 minecraft:textures/atlas/mob_effects.png-atlas
+[10:06:53] [main/INFO]: [OptiFine] Animated sprites: 0
+[10:06:53] [main/INFO]: [OptiFine] *** Reloading custom textures ***
+[10:06:53] [main/WARN]: [OptiFine] Unknown resource pack file: mod_resources
+[10:06:53] [main/WARN]: [OptiFine] Unknown resource pack file: mod_resources
+[10:06:53] [main/WARN]: [OptiFine] Unknown resource pack file: mod_resources
+[10:07:08] [main/WARN]: [OptiFine] Unknown resource pack file: mod_resources
+[10:07:09] [main/WARN]: [OptiFine] Unknown resource pack file: mod_resources
+[10:07:09] [main/WARN]: [OptiFine] Unknown resource pack file: mod_resources
+[10:07:09] [main/INFO]: [OptiFine] Disable Forge light pipeline
+[10:07:09] [main/INFO]: [OptiFine] Set ForgeConfig.CLIENT.forgeLightPipelineEnabled=false
+[10:07:10] [Realms Notification Availability checker #1/INFO]: Could not authorize you against Realms server: Invalid session id
+[10:07:14] [main/INFO]: [org.tlauncher.util.TLModCfg:<clinit>:28]: [TLSkinCape] Current TLSkinCape version is 1.17
+[10:07:14] [main/INFO]: [org.tlauncher.util.TLModCfg:<clinit>:51]: [TLSkinCape] Current Minecraft version is 1.15.
+[10:07:14] [main/INFO]: [org.tlauncher.util.TLModCfg:<clinit>:55]: [TLSkinCape] OptiFine detected.
+[10:07:24] [main/WARN]: Ambiguity between arguments [teleport, destination] and [teleport, targets] with inputs: [Player, 0123, @e, dd12be42-52a9-4a91-a8a1-11c01849e498]
+[10:07:25] [main/WARN]: Ambiguity between arguments [teleport, location] and [teleport, destination] with inputs: [0.1 -0.5 .9, 0 0 0]
+[10:07:25] [main/WARN]: Ambiguity between arguments [teleport, location] and [teleport, targets] with inputs: [0.1 -0.5 .9, 0 0 0]
+[10:07:25] [main/WARN]: Ambiguity between arguments [teleport, targets] and [teleport, destination] with inputs: [Player, 0123, dd12be42-52a9-4a91-a8a1-11c01849e498]
+[10:07:25] [main/WARN]: Ambiguity between arguments [teleport, targets, location] and [teleport, targets, destination] with inputs: [0.1 -0.5 .9, 0 0 0]
+[10:07:25] [main/INFO]: Reloading ResourceManager: Default, iChunUtil-1.16.5-10.5.1.jar, FallingTree-1.16.5-2.11.5.jar, forge-1.16.5-36.2.20-universal.jar, twilightforest-1.16.5-4.0.546-universal.jar, tl_skin_cape_forge_1.16.5-1.17.jar, Xaeros_Minimap_21.22.5_Forge_1.16.5.jar, gravestone-1.16.5-1.0.7.jar, BackTools-1.16.5-10.1.0.jar, sit-1.16.5-v1.3.1.jar, jei-1.16.5-7.7.1.137.jar
+[10:07:27] [main/INFO]: Loaded 7 recipes
+[10:07:28] [main/INFO]: Loaded 1135 advancements
+[10:07:57] [main/INFO]: Attempt 1...
+[10:08:21] [main/WARN]: Ambiguity between arguments [teleport, destination] and [teleport, targets] with inputs: [Player, 0123, @e, dd12be42-52a9-4a91-a8a1-11c01849e498]
+[10:08:21] [main/WARN]: Ambiguity between arguments [teleport, location] and [teleport, destination] with inputs: [0.1 -0.5 .9, 0 0 0]
+[10:08:21] [main/WARN]: Ambiguity between arguments [teleport, location] and [teleport, targets] with inputs: [0.1 -0.5 .9, 0 0 0]
+[10:08:21] [main/WARN]: Ambiguity between arguments [teleport, targets] and [teleport, destination] with inputs: [Player, 0123, dd12be42-52a9-4a91-a8a1-11c01849e498]
+[10:08:21] [main/WARN]: Ambiguity between arguments [teleport, targets, location] and [teleport, targets, destination] with inputs: [0.1 -0.5 .9, 0 0 0]
+[10:08:21] [main/INFO]: Reloading ResourceManager: Default, iChunUtil-1.16.5-10.5.1.jar, FallingTree-1.16.5-2.11.5.jar, forge-1.16.5-36.2.20-universal.jar, twilightforest-1.16.5-4.0.546-universal.jar, tl_skin_cape_forge_1.16.5-1.17.jar, Xaeros_Minimap_21.22.5_Forge_1.16.5.jar, gravestone-1.16.5-1.0.7.jar, BackTools-1.16.5-10.1.0.jar, sit-1.16.5-v1.3.1.jar, jei-1.16.5-7.7.1.137.jar
+[10:08:22] [main/INFO]: Loaded 7 recipes
+[10:08:23] [main/INFO]: Loaded 1135 advancements
+[10:08:26] [main/WARN]: Ambiguity between arguments [teleport, destination] and [teleport, targets] with inputs: [Player, 0123, @e, dd12be42-52a9-4a91-a8a1-11c01849e498]
+[10:08:26] [main/WARN]: Ambiguity between arguments [teleport, location] and [teleport, destination] with inputs: [0.1 -0.5 .9, 0 0 0]
+[10:08:26] [main/WARN]: Ambiguity between arguments [teleport, location] and [teleport, targets] with inputs: [0.1 -0.5 .9, 0 0 0]
+[10:08:26] [main/WARN]: Ambiguity between arguments [teleport, targets] and [teleport, destination] with inputs: [Player, 0123, dd12be42-52a9-4a91-a8a1-11c01849e498]
+[10:08:26] [main/WARN]: Ambiguity between arguments [teleport, targets, location] and [teleport, targets, destination] with inputs: [0.1 -0.5 .9, 0 0 0]
+[10:08:26] [main/INFO]: Reloading ResourceManager: Default, iChunUtil-1.16.5-10.5.1.jar, FallingTree-1.16.5-2.11.5.jar, forge-1.16.5-36.2.20-universal.jar, twilightforest-1.16.5-4.0.546-universal.jar, tl_skin_cape_forge_1.16.5-1.17.jar, Xaeros_Minimap_21.22.5_Forge_1.16.5.jar, gravestone-1.16.5-1.0.7.jar, BackTools-1.16.5-10.1.0.jar, sit-1.16.5-v1.3.1.jar, jei-1.16.5-7.7.1.137.jar
+[10:08:27] [main/INFO]: Loaded 7 recipes
+[10:08:27] [main/INFO]: Loaded 1135 advancements
+[10:08:29] [main/INFO]: Environment: authHost='https://authserver.mojang.com', accountsHost='https://api.mojang.com', sessionHost='https://sessionserver.mojang.com', servicesHost='https://api.minecraftservices.com', name='PROD'
+[10:08:29] [Server thread/INFO]: Starting integrated minecraft server version 1.16.5
+[10:08:29] [Server thread/INFO]: Generating keypair
+[10:08:29] [Server thread/WARN]: Configuration file C:\Users\User\AppData\Roaming\.minecraft\versions\Server-FDN\saves\Nowy œwiat\serverconfig\forge-server.toml is not correct. Correcting
+[10:08:29] [Server thread/WARN]: Incorrect key server was corrected from null to its default, SimpleCommentedConfig:{}. 
+[10:08:29] [Server thread/WARN]: Incorrect key server.removeErroringEntities was corrected from null to its default, false. 
+[10:08:29] [Server thread/WARN]: Incorrect key server.removeErroringTileEntities was corrected from null to its default, false. 
+[10:08:29] [Server thread/WARN]: Incorrect key server.fullBoundingBoxLadders was corrected from null to its default, false. 
+[10:08:29] [Server thread/WARN]: Incorrect key server.zombieBaseSummonChance was corrected from null to its default, 0.1. 
+[10:08:29] [Server thread/WARN]: Incorrect key server.zombieBabyChance was corrected from null to its default, 0.05. 
+[10:08:29] [Server thread/WARN]: Incorrect key server.logCascadingWorldGeneration was corrected from null to its default, true. 
+[10:08:29] [Server thread/WARN]: Incorrect key server.fixVanillaCascading was corrected from null to its default, false. 
+[10:08:29] [Server thread/WARN]: Incorrect key server.dimensionUnloadQueueDelay was corrected from null to its default, 0. 
+[10:08:29] [Server thread/WARN]: Incorrect key server.treatEmptyTagsAsAir was corrected from null to its default, false. 
+[10:08:29] [Server thread/WARN]: Incorrect key server.fixAdvancementLoading was corrected from null to its default, true. 
+[10:08:29] [Server thread/WARN]: Configuration file C:\Users\User\AppData\Roaming\.minecraft\versions\Server-FDN\saves\Nowy œwiat\serverconfig\gravestone-server.toml is not correct. Correcting
+[10:08:29] [Server thread/WARN]: Incorrect key enable_obituary was corrected from null to its default, true. 
+[10:08:29] [Server thread/WARN]: Incorrect key replaceable_blocks was corrected from null to its default, [#gravestone:grave_replaceable]. 
+[10:08:29] [Server thread/WARN]: Incorrect key remove_obituary was corrected from null to its default, false. 
+[10:08:29] [Server thread/WARN]: Incorrect key only_owners_can_break was corrected from null to its default, false. 
+[10:08:29] [Server thread/WARN]: Incorrect key spawn_ghost was corrected from null to its default, false. 
+[10:08:29] [Server thread/WARN]: Incorrect key friendly_ghost was corrected from null to its default, true. 
+[10:08:29] [Server thread/WARN]: Incorrect key sneak_pickup was corrected from null to its default, false. 
+[10:08:29] [Server thread/WARN]: Incorrect key break_pickup was corrected from null to its default, true. 
+[10:08:29] [Server thread/WARN]: Configuration file C:\Users\User\AppData\Roaming\.minecraft\versions\Server-FDN\saves\Nowy œwiat\serverconfig\sit-server.toml is not correct. Correcting
+[10:08:29] [Server thread/WARN]: Incorrect key block_reach_distance was corrected from null to its default, 4. 
+[10:08:29] [Server thread/WARN]: Configuration file C:\Users\User\AppData\Roaming\.minecraft\versions\Server-FDN\saves\Nowy œwiat\serverconfig\jei-server.toml is not correct. Correcting
+[10:08:29] [Server thread/WARN]: Incorrect key cheat mode was corrected from null to its default, SimpleCommentedConfig:{}. 
+[10:08:29] [Server thread/WARN]: Incorrect key cheat mode.enableCheatModeForOp was corrected from null to its default, true. 
+[10:08:29] [Server thread/WARN]: Incorrect key cheat mode.enableCheatModeForCreative was corrected from null to its default, true. 
+[10:08:29] [Server thread/WARN]: Incorrect key cheat mode.enableCheatModeForGive was corrected from null to its default, false. 
+[10:08:36] [Server thread/INFO]: Preparing start region for dimension minecraft:overworld
+[10:08:36] [main/INFO]: Przygotowywanie strefy odrodzenia: 0%
+[10:08:36] [main/INFO]: Przygotowywanie strefy odrodzenia: 0%
+[10:08:37] [main/INFO]: Przygotowywanie strefy odrodzenia: 0%
+[10:08:37] [main/INFO]: Przygotowywanie strefy odrodzenia: 0%
+[10:08:38] [main/INFO]: Przygotowywanie strefy odrodzenia: 0%
+[10:08:39] [main/INFO]: Przygotowywanie strefy odrodzenia: 2%
+[10:08:39] [main/INFO]: Przygotowywanie strefy odrodzenia: 2%
+[10:08:39] [main/INFO]: Przygotowywanie strefy odrodzenia: 2%
+[10:08:40] [main/INFO]: Przygotowywanie strefy odrodzenia: 4%
+[10:08:40] [main/INFO]: Przygotowywanie strefy odrodzenia: 4%
+[10:08:41] [main/INFO]: Przygotowywanie strefy odrodzenia: 4%
+[10:08:41] [main/INFO]: Przygotowywanie strefy odrodzenia: 9%
+[10:08:42] [main/INFO]: Przygotowywanie strefy odrodzenia: 9%
+[10:08:42] [main/INFO]: Przygotowywanie strefy odrodzenia: 9%
+[10:08:43] [main/INFO]: Przygotowywanie strefy odrodzenia: 9%
+[10:08:43] [main/INFO]: Przygotowywanie strefy odrodzenia: 15%
+[10:08:44] [main/INFO]: Przygotowywanie strefy odrodzenia: 15%
+[10:08:44] [main/INFO]: Przygotowywanie strefy odrodzenia: 17%
+[10:08:45] [main/INFO]: Przygotowywanie strefy odrodzenia: 17%
+[10:08:45] [main/INFO]: Przygotowywanie strefy odrodzenia: 17%
+[10:08:46] [main/INFO]: Przygotowywanie strefy odrodzenia: 22%
+[10:08:46] [main/INFO]: Przygotowywanie strefy odrodzenia: 22%
+[10:08:47] [main/INFO]: Przygotowywanie strefy odrodzenia: 22%
+[10:08:47] [main/INFO]: Przygotowywanie strefy odrodzenia: 25%
+[10:08:48] [main/INFO]: Przygotowywanie strefy odrodzenia: 25%
+[10:08:49] [main/INFO]: Przygotowywanie strefy odrodzenia: 25%
+[10:08:50] [main/INFO]: Przygotowywanie strefy odrodzenia: 31%
+[10:08:50] [main/INFO]: Przygotowywanie strefy odrodzenia: 31%
+[10:08:51] [main/INFO]: Przygotowywanie strefy odrodzenia: 34%
+[10:08:51] [main/INFO]: Przygotowywanie strefy odrodzenia: 34%
+[10:08:51] [main/INFO]: Przygotowywanie strefy odrodzenia: 40%
+[10:08:51] [main/INFO]: Przygotowywanie strefy odrodzenia: 40%
+[10:08:52] [main/INFO]: Przygotowywanie strefy odrodzenia: 45%
+[10:08:52] [main/INFO]: Przygotowywanie strefy odrodzenia: 46%
+[10:08:53] [main/INFO]: Przygotowywanie strefy odrodzenia: 49%
+[10:08:54] [main/INFO]: Przygotowywanie strefy odrodzenia: 51%
+[10:08:54] [main/INFO]: Przygotowywanie strefy odrodzenia: 51%
+[10:08:55] [main/INFO]: Przygotowywanie strefy odrodzenia: 56%
+[10:08:55] [main/INFO]: Przygotowywanie strefy odrodzenia: 56%
+[10:08:55] [main/INFO]: Przygotowywanie strefy odrodzenia: 62%
+[10:08:57] [main/INFO]: Przygotowywanie strefy odrodzenia: 63%
+[10:08:57] [main/INFO]: Przygotowywanie strefy odrodzenia: 63%
+[10:08:57] [main/INFO]: Przygotowywanie strefy odrodzenia: 63%
+[10:08:58] [main/INFO]: Przygotowywanie strefy odrodzenia: 69%
+[10:08:58] [main/INFO]: Przygotowywanie strefy odrodzenia: 69%
+[10:08:58] [main/INFO]: Przygotowywanie strefy odrodzenia: 70%
+[10:08:59] [main/INFO]: Przygotowywanie strefy odrodzenia: 76%
+[10:09:00] [main/INFO]: Przygotowywanie strefy odrodzenia: 79%
+[10:09:00] [main/INFO]: Przygotowywanie strefy odrodzenia: 79%
+[10:09:01] [main/INFO]: Przygotowywanie strefy odrodzenia: 85%
+[10:09:01] [main/INFO]: Przygotowywanie strefy odrodzenia: 88%
+[10:09:03] [main/INFO]: Przygotowywanie strefy odrodzenia: 88%
+[10:09:03] [main/INFO]: Przygotowywanie strefy odrodzenia: 88%
+[10:09:03] [main/INFO]: Przygotowywanie strefy odrodzenia: 88%
+[10:09:03] [main/INFO]: Time elapsed: 26960 ms
+[10:09:03] [Server thread/INFO]: Changing view distance to 7, from 10
+[10:09:08] [Netty Local Client IO #0/INFO]: Connected to a modded server.
+[10:09:08] [Server thread/INFO]: Using new advancement loading for net.minecraft.advancements.PlayerAdvancements@67879d48
+[10:09:08] [Server thread/INFO]: Virbus[local:E:cb45cb74] logged in with entity id 300 at (-201.5, 72.0, -20.5)
+[10:09:08] [Server thread/INFO]: Gracz Virbus do³¹czy³ do gry
+[10:09:09] [main/INFO]: [xaero.common.XaeroMinimapSession:init:60]: New minimap session initialized!
+[10:09:09] [main/INFO]: Starting JEI...
+[10:09:09] [Server thread/INFO]: Saving and pausing game...
+[10:09:09] [Server thread/INFO]: Saving chunks for level 'ServerLevel[Nowy œwiat]'/minecraft:overworld
+[10:09:10] [main/INFO]: Building ingredient list...
+[10:09:10] [main/INFO]: Building ingredient list took 6.001 ms
+[10:09:10] [main/INFO]: Building ingredient filter...
+[10:09:10] [main/INFO]: Building ingredient filter took 621.6 ms
+[10:09:10] [main/INFO]: Building bookmarks...
+[10:09:10] [main/INFO]: Building bookmarks took 1.551 ms
+[10:09:10] [main/INFO]: Building recipe registry...
+[10:09:10] [main/INFO]: Building recipe registry took 104.4 ms
+[10:09:10] [main/INFO]: Building runtime...
+[10:09:10] [main/INFO]: Building runtime took 75.55 ms
+[10:09:10] [main/INFO]: Starting JEI took 1.234 s
+[10:09:11] [Server thread/INFO]: Saving chunks for level 'ServerLevel[Nowy œwiat]'/minecraft:the_nether
+[10:09:11] [Server thread/INFO]: Saving chunks for level 'ServerLevel[Nowy œwiat]'/minecraft:the_end
+[10:09:11] [Server thread/INFO]: Saving chunks for level 'ServerLevel[Nowy œwiat]'/twilightforest:skylight_forest
+[10:09:11] [Server thread/INFO]: Saving chunks for level 'ServerLevel[Nowy œwiat]'/twilightforest:twilightforest
+[10:09:12] [Server thread/WARN]: Can't keep up! Is the server overloaded? Running 3437ms or 68 ticks behind
+[10:09:12] [main/INFO]: [xaero.common.minimap.render.radar.EntityIconPrerenderer:<init>:184]: No Iris!
+[10:09:12] [main/INFO]: [xaero.common.minimap.render.radar.EntityIconManager:resetResources:194]: Reloading entity icon resources...
+[10:09:12] [main/INFO]: [xaero.common.minimap.render.radar.EntityIconManager:resetResources:207]: Done!
+[10:09:13] [main/INFO]: Loaded 0 advancements
+[10:09:14] [main/INFO]: textures 'cape_test_272' was added, skin: false,cape: true, max waiting: 33 ,during : 119802 
+[10:09:14] [main/INFO]: calculated cape performance:TEXTURE_272, middle time: 9.333333333333334
+[10:09:15] [main/INFO]: can use texture size:TEXTURE_272, middle time: 2.4
+[10:09:30] [main/INFO]: Loaded 4 advancements
+[10:09:34] [Server thread/INFO]: Saving and pausing game...
+[10:09:34] [Server thread/INFO]: Saving chunks for level 'ServerLevel[Nowy œwiat]'/minecraft:overworld
+[10:09:35] [Server thread/INFO]: Saving chunks for level 'ServerLevel[Nowy œwiat]'/minecraft:the_nether
+[10:09:35] [Server thread/INFO]: Saving chunks for level 'ServerLevel[Nowy œwiat]'/minecraft:the_end
+[10:09:35] [Server thread/INFO]: Saving chunks for level 'ServerLevel[Nowy œwiat]'/twilightforest:skylight_forest
+[10:09:35] [Server thread/INFO]: Saving chunks for level 'ServerLevel[Nowy œwiat]'/twilightforest:twilightforest
+[10:09:51] [Server thread/INFO]: Saving and pausing game...
+[10:09:51] [Server thread/INFO]: Saving chunks for level 'ServerLevel[Nowy œwiat]'/minecraft:overworld
+[10:09:52] [Server thread/INFO]: Saving chunks for level 'ServerLevel[Nowy œwiat]'/minecraft:the_nether
+[10:09:52] [Server thread/INFO]: Saving chunks for level 'ServerLevel[Nowy œwiat]'/minecraft:the_end
+[10:09:52] [Server thread/INFO]: Saving chunks for level 'ServerLevel[Nowy œwiat]'/twilightforest:skylight_forest
+[10:09:52] [Server thread/INFO]: Saving chunks for level 'ServerLevel[Nowy œwiat]'/twilightforest:twilightforest
+[10:09:54] [main/INFO]: Using default channel type
+[10:09:54] [main/INFO]: Started serving on 1094
+[10:09:54] [main/INFO]: [CHAT] Lokalna gra hostowana na porcie 1094
+[10:10:06] [Server thread/INFO]: [Virbus: Zmieniono tryb gry na Tryb kreatywny]
+[10:10:06] [main/INFO]: [CHAT] Zmieniono tryb gry na Tryb kreatywny
+[10:10:42] [main/INFO]: Loaded 5 advancements
+[10:11:05] [main/INFO]: Loaded 6 advancements
+[10:11:06] [main/INFO]: Loaded 7 advancements
+[10:11:38] [Server thread/INFO]: Gracz Virbus dokona³ postêpu [Diamenty!]
+[10:11:38] [main/INFO]: [CHAT] Gracz Virbus dokona³ postêpu [Diamenty!]
+[10:11:38] [main/INFO]: Loaded 26 advancements
+[10:11:40] [main/INFO]: Loaded 36 advancements
+[10:11:54] [Server thread/WARN]: Can't keep up! Is the server overloaded? Running 5701ms or 114 ticks behind
+[10:11:55] [main/INFO]: Loaded 39 advancements
+[10:11:56] [main/INFO]: Loaded 41 advancements
+[10:12:21] [main/INFO]: Loaded 42 advancements
+[10:12:33] [main/INFO]: [xaero.common.XaeroMinimapSession:cleanup:71]: Minimap session finalized.
+[10:12:33] [Server thread/INFO]: Virbus lost connection: Roz³¹czono
+[10:12:33] [Server thread/INFO]: Gracz Virbus opuœci³ grê 
+[10:12:33] [Server thread/INFO]: Stopping singleplayer server as player logged out
+[10:12:33] [Server thread/INFO]: Stopping server
+[10:12:33] [Server thread/INFO]: Saving players
+[10:12:33] [Server thread/INFO]: Saving worlds
+[10:12:33] [Server thread/INFO]: Saving chunks for level 'ServerLevel[Nowy œwiat]'/minecraft:overworld
+[10:12:34] [Server thread/INFO]: ThreadedAnvilChunkStorage (Nowy œwiat): All chunks are saved
+[10:12:34] [Server thread/INFO]: Saving chunks for level 'ServerLevel[Nowy œwiat]'/minecraft:the_nether
+[10:12:34] [Server thread/INFO]: ThreadedAnvilChunkStorage (DIM-1): All chunks are saved
+[10:12:34] [Server thread/INFO]: Saving chunks for level 'ServerLevel[Nowy œwiat]'/minecraft:the_end
+[10:12:34] [Server thread/INFO]: ThreadedAnvilChunkStorage (DIM1): All chunks are saved
+[10:12:34] [Server thread/INFO]: Saving chunks for level 'ServerLevel[Nowy œwiat]'/twilightforest:skylight_forest
+[10:12:34] [Server thread/INFO]: ThreadedAnvilChunkStorage (skylight_forest): All chunks are saved
+[10:12:34] [Server thread/INFO]: Saving chunks for level 'ServerLevel[Nowy œwiat]'/twilightforest:twilightforest
+[10:12:36] [Server thread/INFO]: ThreadedAnvilChunkStorage (twilightforest): All chunks are saved
+[10:12:36] [Server thread/INFO]: ThreadedAnvilChunkStorage (Nowy œwiat): All chunks are saved
+[10:12:36] [Server thread/INFO]: ThreadedAnvilChunkStorage (DIM-1): All chunks are saved
+[10:12:36] [Server thread/INFO]: ThreadedAnvilChunkStorage (DIM1): All chunks are saved
+[10:12:36] [Server thread/INFO]: ThreadedAnvilChunkStorage (skylight_forest): All chunks are saved
+[10:12:36] [Server thread/INFO]: ThreadedAnvilChunkStorage (twilightforest): All chunks are saved
+[10:12:40] [main/INFO]: Stopping!
